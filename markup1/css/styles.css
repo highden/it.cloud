@@ -1,0 +1,47 @@
+body {
+	margin: 0;
+	color: #000;
+	background: #fff;
+	font: 14px/24px Georgia, serif;
+}
+
+/*a {
+	color: #000;
+	text-decoration: none;
+}*/
+
+.logo {
+	background: red;
+}
+
+.wrapper {
+	width: 1063px;
+	margin: 0 auto;
+}
+
+.nav__list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.nav__list li {
+	display: inline-block;
+	padding: 0  20px;
+}
+
+.nav__list a {
+	color: #626262;
+	text-decoration: none;
+}
+
+.nav__list a:hover {
+	color: red;
+
+}
+
+.nav__list a:active {
+	color: green;
+}
