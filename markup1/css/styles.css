@@ -5,13 +5,11 @@ body {
 	font: 14px/24px Georgia, serif;
 }
 
-/*a {
-	color: #000;
-	text-decoration: none;
-}*/
-
 .logo {
-	background: red;
+	position: relative;
+	left: 50%;
+	margin: 40px 0;
+	transform: translate(-30px);
 }
 
 .wrapper {
