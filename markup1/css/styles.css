@@ -1,3 +1,45 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?qhdhut');
+  src:  url('../fonts/icomoon.eot?qhdhut#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qhdhut') format('truetype'),
+    url('../fonts/icomoon.woff?qhdhut') format('woff'),
+    url('../fonts/icomoon.svg?qhdhut#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter:before {
+  content: "\f099";
+}
+.icon-facebook:before {
+  content: "\f09a";
+}
+.icon-instagram:before {
+  content: "\f16d";
+}
+
 body {
 	margin: 0;
 	color: #000;
@@ -5,11 +47,46 @@ body {
 	font: 14px/24px Georgia, serif;
 }
 
+<<<<<<< HEAD
 .logo {
 	position: relative;
 	left: 50%;
 	margin: 40px 0;
 	transform: translate(-30px);
+=======
+/*a {
+	color: #000;
+	text-decoration: none;
+}*/
+
+.main {
+	background: #eee;
+	max-width: 900px;
+	margin: 0 auto;
+	min-height: 200px;
+}
+
+.container {
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.container:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.logo {
+	position: relative;
+	left: 50%;	
+	transform: translate(-30px);
+}
+
+.header {
+	padding: 40px auto;
+	background: red;
+>>>>>>> 33f7c27ef724666bb7913bdd2c4b2e8a0b2699f8
 }
 
 .wrapper {
@@ -43,3 +120,67 @@ body {
 .nav__list a:active {
 	color: green;
 }
+
+.footer {
+	background: #f0f0f0;
+	padding: 30px 0 45px;
+}
+.footer-text {
+	float: left;
+	margin: 0 10px 0 0;
+}
+.social {
+	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.social li {
+	float: left;
+	margin: 0 0 0 20px;
+}
+
+.social li a {
+	color: #000;
+	text-decoration: none;
+}
+
+.social li a:hover {
+	color: red;
+}
+
+/*.social li a {
+	height: 15px;
+	display: block;
+	background: url('../images/sprite.png') no-repeat;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+
+.social li .facebook {
+	width: 9px;
+}
+
+.social li .facebook:hover {
+	background-position: 0 -17px;
+}	
+
+.social li .twitter {
+	width: 18px;
+	background-position: -26px 0;
+}
+
+.social li .twitter:hover {
+	background-position: -26px -17px;
+}
+
+.social li .instagram {
+	width: 15px;
+	background-position: -61px 0;
+}
+
+.social li .instagram:hover {
+	background-position: -61px -17px;
+
+}*/
