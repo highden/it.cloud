@@ -56,12 +56,14 @@ h1, h2 {
 }
 
 .btn-nav {
+	display: none;
 	position: absolute;
 	top: 20px;
 	right: 20px;
 	width: 40px;
 	height: 40px;
 	background: rgba(255,255,255, 0.4);
+	border-radius: 5px;
 }
 
 .btn-nav span,
@@ -69,22 +71,23 @@ h1, h2 {
 .btn-nav:before {
 	content: '';
 	position: absolute;
-	left: 4px;
-	right: 4px;
+	left: 5px;
+	right: 5px;
 	height: 4px;
 	background: #fff;
 	top: 50%;
-	margin-top -2px;
+	margin-top: -2px;
 	transition: all 0.3s ease;
+	border-radius: 2px;
 }
 
 .btn-nav:after {
-	margin: 0;
-	top:0;
+	margin: 7px 0 0;
+	
 }
 
 .btn-nav:before {
-	margin-top: -12px;
+	margin-top: -11px;
 }
 
 .btn-nav:hover span {
@@ -203,7 +206,7 @@ main {
 .column {
 	width: 29.8%;
 	padding: 20px;
-	margin: 0 0 0 60px;
+	margin: 0 0 0 5.2%;
 	border-radius: 8px;
 	float: left;
 	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -397,8 +400,6 @@ main {
 	.main {
 		padding: 20px 0;
 	}
-
-
 }
 
 @media all and (max-width: 767px) {
@@ -406,6 +407,19 @@ main {
 		float: none;
 		width: 100%;
 		margin: 0 0 20px;
+	}
+
+	.column:first-child {
+		margin: 0 0 20px;
+	}
+
+	.header {
+		text-align: left;
+
+	}
+
+	.btn-nav {
+		display: block;
 	}
 
 	.nav {
@@ -432,6 +446,10 @@ main {
 		padding: 5px 15px;
 	}
 
+	.nav li a:after {
+		display: none;
+	}
+
 	.nav li ul {
 		position: static;
 		transform: none;
@@ -450,6 +468,10 @@ main {
 
 	.footer .copy {
 		float: none;
+	}
+
+	.footer p {
+		text-align: center;
 	}
 
 }
