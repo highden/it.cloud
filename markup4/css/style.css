@@ -18,7 +18,7 @@ a:hover {
 	text-decoration: none;
 }
 
-h1, h2 {
+h1, h2, h3 {
 	margin: 0;
 }
 
@@ -42,6 +42,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	width: 100%;
 }
 
 .header {
@@ -377,6 +378,7 @@ body {
 }
 
 .btn {
+
 	display: inline-block;
 	color: #fff;
 	background: #1bbc9b;
@@ -420,27 +422,66 @@ body {
 
 .columns {
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
+	margin: 0 -10px;
+	
 }
 .column-form {
 	flex: 0 0 50%;
+	max-width: 50%;
+	padding: 0 10px;
+}
+
+.column-form textarea {
+	display: block;
+	width: 100%;
+	margin: 0 0 20px;
 }
 
 .form-group {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
 	flex: 0 0 50%;
+	justify-content: space-between;
+	margin: 0 0 20px;
 }
 
-.contact-form input {
-	display: block;
+.form-group input {
+	width: 48%;
+	height: 48px;
+	border: 2px solid #bec3c7;
+	padding: 15px 12px;
+
+}
+
+.contact-form {
+	margin: 0 0 60px;
 }
 
 .column-info {
 	flex: 0 0 50%;
 }
+
+.btn-holder {
+	text-align: right;
+}
+
+.btn-holder input {
+	display: inline-block;
+	border: 0;
+	color: #fff;
+	background: #1bbc9b;
+	padding: 15px 30px;
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	line-height: 17px;
+	transition: all 0.3s ease;
+}
+
+.column-info h3 {
+	text-transform: uppercase;
+}
+
 
 .footer {
 	background: #2d3e50;
