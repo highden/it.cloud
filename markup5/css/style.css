@@ -1,0 +1,178 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+
+img {
+	border: 0;
+}
+
+a {
+	color: #6d5384;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+form,
+fieldset,
+figure {
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+
+body {
+	font: 14px/1.43 Arial, sans-serif;
+	color: #636060;
+	background: #e1e1df;
+	margin: 0;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 110px;
+	display: flex;
+	justify-content: space-between;
+	align-items: start;
+}
+
+.articles {
+	width: 80%;
+}
+
+article {
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	padding: 50px 30px;
+	margin: 0 0 30px;
+}
+
+.content {
+	width: 80%;
+}
+
+.content span {
+	margin-right: 10px;
+}
+
+.content h1 {
+	font: 28px 'Yanone Kaffeesatz', sans-serif;
+	color: #000;
+	margin: 0 0 30px;
+}
+
+.minutes {
+	float: right;
+}
+
+.description {
+	margin: 0 0 10px;
+	color: #989b9f;
+}
+
+figure {
+	float:left;
+	margin-right: 34px;
+}
+
+figure img {
+	border: 5px solid #f0f0f0;
+}
+
+figcaption {
+	font-size: 12px;
+}
+
+.author {
+	margin-top: 40px;
+	padding: 0 10px 10px;
+	text-align: center;
+}
+
+.position {
+	font: 20px 'Yanone Kaffeesatz', sans-serif;
+	color: #000;
+}
+
+.name {
+	font-size: 12px;
+	color: #e6618c;
+	margin: 0 0 20px 0;
+}
+
+.social {
+	list-style: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+		
+}
+
+.social li {
+	
+}
+
+.social li a {
+	color: #c8c8c8;
+	font-size: 17px;
+}
+
+aside {
+	background: #fff;
+	width: 15%;
+}
+
+
+
+@media all and (max-width: 767px) {
+	.btn-nav {
+		display: block;
+		transition: right 0.3s ease;
+	}
+
+	/*.nav-active .btn-nav {
+		right: 240px;
+	}*/
+
+	.header {
+		position: relative;
+	}
+
+	.nav ul {
+		position: fixed;
+		right: -240px;
+		background: #fff;
+		width: 240px;
+		top: 0;
+		min-height: 100vh;
+		display: block;
+		transition: right 0.3s ease;
+	}
+
+	.page {
+		width: 100%;
+		transition: margin 0.3s ease;
+	}
+
+	.nav-active .page {
+		margin: 0 240px 0 -240px;
+	}
+
+	.nav-active .nav ul {
+		right: 0;
+	}
+
+	.video-container h1 {
+		font-size: 40px;
+	}
+}
