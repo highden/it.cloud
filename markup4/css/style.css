@@ -434,13 +434,10 @@ body {
 .column-form textarea {
 	display: block;
 	width: 100%;
-<<<<<<< HEAD
 	margin: 0 0 20px;
 	font: italic 14px Lato, sans-serif;
 	padding: 15px 12px;
 	border: 2px solid #bec3c7;
-=======
->>>>>>> 5300a335daa7a2105a40c4bc2aab7d050c1dc1b2
 }
 
 .form-group {
@@ -451,7 +448,6 @@ body {
 	margin: 0 0 20px;
 }
 
-<<<<<<< HEAD
 .form-group input {
 	width: 48%;
 	height: 48px;
@@ -463,15 +459,6 @@ body {
 
 .contact-form {
 	margin: 0 0 60px;
-=======
-.contact-form input {
-	flex: 0 0 50%;
-	max-width: 50%
-}
-
-.contact-form {
-	
->>>>>>> 5300a335daa7a2105a40c4bc2aab7d050c1dc1b2
 }
 
 .column-info {
@@ -482,7 +469,6 @@ body {
 	text-align: right;
 }
 
-<<<<<<< HEAD
 .btn-holder input {
 	display: inline-block;
 	border: 0;
@@ -523,12 +509,6 @@ body {
 .column-info i {
 	margin: 0 6px 0 0;
 }
-=======
-.column-info h3 {
-	text-transform: uppercase;
-}
-
->>>>>>> 5300a335daa7a2105a40c4bc2aab7d050c1dc1b2
 
 .footer {
 	background: #2d3e50;
