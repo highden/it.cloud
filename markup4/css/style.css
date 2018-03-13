@@ -36,12 +36,17 @@ body {
 	margin: 0;
 }
 
+.wrapper {
+	overflow: hidden;
+}
+
 .container {
 	max-width: 940px;
 	margin: 0 auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	padding: 0 10px;
 }
 
 .header {
@@ -130,6 +135,7 @@ body {
 
 .visual {
 	height: calc(100vh - 106px);
+	min-height: 440px;
 	display: flex;
 }
 
@@ -279,8 +285,8 @@ body {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	margin: 0 -30px;
-
+/*	margin: 0 -30px;
+*/
 }
 
 .portfolio-item {
@@ -288,7 +294,7 @@ body {
 	width: 180px;
 	height: 180px;
 	/*overflow: hidden;*/
-	margin: 0 30px 30px;
+	margin: 0 25px 30px;
 
 }
 
@@ -419,6 +425,7 @@ body {
 
 .section-form {
 	background: #ecf0f1;
+	padding-top: 60px;
 }
 
 .section-form .container {
@@ -427,13 +434,13 @@ body {
 
 .columns {
 	display: flex;
-	margin: 0 -10px;
+	/*margin: 0 -10px;*/
 	
 }
 .column-form {
 	flex: 0 0 50%;
 	max-width: 50%;
-	padding: 0 10px;
+	margin: 0 20px 0 0;
 }
 
 .column-form textarea {
@@ -470,7 +477,7 @@ body {
 	flex: 0 0 50%;
 	display: flex;
 	flex-direction: column;
-	padding: 0 10px 10px;
+	padding: 0 0 10px 0;
 }
 
 .btn-holder {
@@ -498,7 +505,7 @@ body {
 
 .column-info h3 {
 	text-transform: uppercase;
-	margin: 0 0 26px;
+	margin: -4px 0 22px;
 	font-weight: 400;
 	font-size: 14px;
 }
@@ -519,7 +526,7 @@ address div {
 }
 
 .column-info i {
-	margin: 0 6px 0 0;
+	margin: 3px 6px 0 0;
 	float: left;
 }
 
@@ -541,6 +548,13 @@ address div {
 
 .footer .container {
 	height: 85px;
+}
+
+
+@media all and (max-width: 950px) {
+	.person-block .social li {
+		margin-right: 10px;
+	}
 }
 
 @media all and (max-width: 767px) {
@@ -593,7 +607,7 @@ address div {
 	list-style: none;
 	padding: 0;
 	margin: 0 0 20px;
-	width: 100%;
+	width: 108%;
 	display: block; 
 	}
 
@@ -612,6 +626,11 @@ address div {
 	text-align: center;
 	}
 
+	.portfolio {
+	justify-content: center;
+
+	}
+
 	.people-holder {
 		flex-wrap: wrap;
 	}
@@ -623,6 +642,10 @@ address div {
 
 	}
 
+	.person-block .social li {
+		margin-right: 20px;
+	}
+
 	
 
 	.columns {
@@ -632,11 +655,11 @@ address div {
 	}
 	.column-form {
 	max-width: 100%;
-	padding: 0 10px;
+	margin: 0;
 	}
 }
 
-@media all and (max-width: 480px) {
+@media all and (max-width: 680px) {
 	.people-holder {
 		display: block;
 	}
@@ -645,5 +668,24 @@ address div {
 		text-align: center;
 		margin: 0 0 20px;
 
+	}
+	.back-to-top {
+		width: 25px;
+		height: 25px;
+		font-size: 15px;
+		padding: 0;
+	}
+
+	.btn-holder button {
+		width: 100%;
+	}	
+
+}
+
+
+@media all and (max-width: 400px) {
+	.footer-text {
+		display: block;
+		max-width: 180px;
 	}
 }
