@@ -1,0 +1,134 @@
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background: #fff; 
+	color: #6c6c6c;
+	font: 13px/2.3 'Open Sans', sans-serif;
+}
+
+img {
+	border: 0;
+}
+
+h1, h2, h3 {
+	margin: 0;
+}
+
+a {
+	color: #fff;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+form,
+fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.wrapper  {
+	height: 100vh;
+	overflow: hidden;
+
+}
+
+.form {
+	height: 800px;
+	width: 800px;
+	background: rgba(134, 212, 208, 1);
+	margin: auto;
+	padding: 75px;
+}
+
+.form h1 {
+	font-size: 72px;
+	line-height: 80px;
+	font-weight: 300;
+	color: #fff;
+	margin: 0 0 55px 0;
+}
+
+.form h1 span {
+	display: block;
+	font-size: 24px;
+	line-height: 10px;
+}
+
+.form p {
+	font-size: 18px;
+	font-style: italic;
+	color: #b2f4f1;
+}
+
+.columns {
+	display: flex;
+	justify-content: space-between;
+
+
+}
+
+.column {
+	flex: 0 0 47%;
+	display: flex;
+	flex-direction: column;
+}
+
+input,
+select {
+	margin: 0 0 3px 0;
+	font-size: 24px;
+	padding: 5px;
+}
+
+.form ul {
+	padding: 0;
+	margin: 0 0 25px 0;
+}
+
+input[type="date"] {
+	font-size: 14px;
+	padding: 10px;
+	margin: 0 0 45px 0;
+
+}
+
+.column select {
+	font-size: 14px;
+	padding: 10px;
+}
+
+.radio-button {
+	display: flex;
+	justify-content: flex-start;
+	list-style: none;
+}
+
+.radio-button li {
+	margin: 0 30px 0 0;
+}
+
+.subscribe {
+	display: flex;
+	justify-content: space-between;
+}
+
+input[type="checkbox"] {
+	margin: 0 10px 0 0;
+}
+
+.form a {
+	float: right;
+}

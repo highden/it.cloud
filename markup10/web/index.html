@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEFAULT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/libs.css">
+    <link rel="icon" href="img/icon/favicon.png">
+</head>
+<body>
+
+<form action="mail.php" method="post" novalidate>
+
+	<div class="form-field">
+		<label>
+			Name
+			<input type="text" name="name" data-pattern="^[a-zA-Z]*$" required>
+		</label>
+
+		<p class="error">Invalid name</p>
+		<p class="empty-error">Required field</p>
+	</div>
+
+	<div class="form-field">
+		<label>
+			Phone
+			<input type="text" name="phone" data-only-pattern="^\+?[0-9\-()]*$" required>
+		</label>
+
+		<p class="error">Invalid phone</p>
+		<p class="empty-error">Required field</p>
+	</div>
+
+
+	<div class="form-field">
+        <label>
+            Email
+            <input type="email" name="email" data-after-pattern="^[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,4}$" required>
+        </label>
+        <p class="error">Invalid email</p>
+        <p class="empty-error">Required field</p>
+    </div>
+    <div class="form-field">
+        <label>
+            Message
+            <textarea name="message"></textarea>
+        </label>
+        <p class="error">Invalid message</p>
+    </div>
+
+    <button type="submit">Submit</button>
+
+	
+</form>
+<!-- <div class="container">
+	<div class="autocomplete">
+		<input type="text" id="text"></input>
+			<ul id="list">
+				
+			</ul>
+		
+	</div>
+</div>
+ -->
+<!-- <ul id="to-do">
+	<li>
+		<label>
+			<input type="checkbox">Just do it
+		</label>
+	</li>
+	<li>
+		<label>
+			<input type="checkbox">Just do it
+		</label>
+	</li>
+</ul>
+<input type="text" id="text">
+<input type="button" value = "add" id="add">
+<input type="button" value = "remove" id = "remove">
+ -->
+
+<script src="js/libs/libs.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
