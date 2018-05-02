@@ -36,7 +36,14 @@ a {
 }
 
 .header {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+		top: 0;
+		left: 0;
+		right: 0;
 	.container {
+
 		display: flex;
 		justify-content: space-between;
 	}
@@ -87,7 +94,9 @@ a {
 }
 
 .header_main {
+	background: $white;
 	.container {
+
 		display: flex;
 		justify-content: space-between;
 		padding: 30px 0;
@@ -141,6 +150,8 @@ a {
 .visual {
 	height: 100vh;
 	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 
 	.container {
 		margin: auto;
@@ -175,6 +186,36 @@ a {
 			background: $green;
 			border: 2px solid $green;
 		}
+
+	.finder {
+		background: $blue;
+		color: $light-blue;
+		padding: 30px 0;
+		width: 100%;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		.head-text {
+			display: flex;
+			flex-direction: column;
+
+			h2 {
+				font-size: 20px;
+				font-weight: 300;
+			}
+
+			span {
+				display: block;
+				font-size: 25px;
+				color: $white;
+			}
+		}
+
+	}	
 }
 
 
