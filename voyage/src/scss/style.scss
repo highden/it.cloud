@@ -95,6 +95,7 @@ a {
 
 .header_main {
 	background: $white;
+	box-shadow: 0px 4px 3px 0px rgba(36,59,70,1);
 	.container {
 
 		display: flex;
@@ -104,6 +105,8 @@ a {
 	}
 
 	.nav {
+		margin: 0 0 0 auto;
+
 		ul {
 			list-style: none;
 			display: flex;
@@ -128,10 +131,7 @@ a {
 
 	.search {
 		position: relative;
-		// width: 20px;
-		// height: 20px;
-		// width: 100%;
-		// padding-bottom: 100%;
+		margin: 0 0 0 100px;
 		font-size: 20px;
 		border: 2px solid $black;
 		border-radius: 50%;
@@ -190,20 +190,27 @@ a {
 	.finder {
 		background: $blue;
 		color: $light-blue;
-		padding: 30px 0;
 		width: 100%;
+		border-top: 1px solid #3a4e61;
+
 
 		.container {
+			max-width: 1175px;
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			color: $light-blue;
 		}
 
 		.head-text {
 			display: flex;
 			flex-direction: column;
+			text-align: left;
+			border-right: 1px solid #3a4e61;
+			padding: 20px 35px 20px 0;
 
 			h2 {
+				
 				font-size: 20px;
 				font-weight: 300;
 			}
@@ -212,9 +219,26 @@ a {
 				display: block;
 				font-size: 25px;
 				color: $white;
+				font-weight: 700;
 			}
 		}
 
+	}
+
+	label {
+		font-size: 22px;
+		padding: 0 24px 0 0;
+	}
+
+	input {
+		margin: 0 0 0 24px;
+		padding: 8px;
+		font-size: 20px;
+		color: $grey;
+	}
+
+	input[type=submit] {
+		margin: 0;
 	}	
 }
 
