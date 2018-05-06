@@ -1,4 +1,5 @@
-$('.center').slick({
+$(document).ready(function(){
+$('.slick-center').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
@@ -22,4 +23,5 @@ $('.center').slick({
       }
     }
   ]
+});
 });

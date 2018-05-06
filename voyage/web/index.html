@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <title>Voyage</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0">
-    <!-- <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-  	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+  	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/libs.css">
     <link rel="icon" href="img/icon/favicon.png">
@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" defer></script>
 	<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js" defer><\/script>')</script>
-  	<!-- <script type="text/javascript" src="slick/slick.min.js" defer></script> -->
+  	<script type="text/javascript" src="js/slick/slick.min.js" defer></script>
   	<script src="js/jquery.main.js" defer></script>
 </head>
 <body>
@@ -23,16 +23,16 @@
 				<div class="container">
 				
 					<ul class="authorization">
-						<li><i class="fa fa-search"></i><a href="">Agent Login</a></li>
-						<li><i class="fa fa-search"></i><a href="">Customer Login</a></li>
-						<li><i class="fa fa-search"></i>Not a Member ? <a href="" class="register">Register</a></li>
-						<li><i class="fa fa-search"></i>Call Us Now :<a href="">815-123-4567</a></li>
+						<li><a href=""><i class="fa fa-user"></i>Agent Login</a></li>
+						<li><a href=""><i class="fa fa-user"></i>Customer Login</a></li>
+						<li><i class="fa fa-file"></i>Not a Member ? <a href="" class="register">Register</a></li>
+						<li>Call Us Now :<a href="">815-123-4567</a></li>
 					</ul>
 					<ul class="socials">
 						<li><a href=""><i class="fa fa-facebook"></i></a></li>
 						<li><a href=""><i class="fa fa-twitter"></i></a></li>
-						<li><a href=""><i class="fa fa-google"></i></a></li>
-						<li><a href=""><i class="fa fa-facebook"></i></a></li>
+						<li><a href=""><i class="fa fa-tumblr"></i></a></li>
+						<li><a href=""><i class="fa fa-pinterest"></i></a></li>
 					</ul>
 				</div>
 			</div>
@@ -78,7 +78,7 @@
 					<div class="form-group">
 						<label>Where<input type="text" placeholder="destination"></label>
 						<label>When<input type="date" placeholder="select date"></label>
-						<input type="submit" value="search">
+						<input type="submit" value="Search">
 					</div>
 				</div>	
 			</form>
@@ -88,13 +88,16 @@
 		<section class="offers">
 			<h2>Special Offers</h2>
 			<p>Best 2014 packages where people love to stay!</p>
-			<div class="center">
+			<div class="slick-center">
 				<div class="offer">
 					<a href=""><img src="img/img-1.jpg" alt=""></a>
 					<div class="title">
 						<div class="title-text">
 							<h3>Hong Kong & Macau</h3>
 							<span class="state">Bonus Extras!</span>
+						</div>
+						<div class="arrow-down">
+							<a href=""><i class="fa fa-chevron-down"></i></a>
 						</div>
 					</div>
 				</div>
@@ -105,6 +108,9 @@
 							<h3>Hong Kong & Macau</h3>
 							<span class="state">Bonus Extras!</span>
 						</div>
+						<div class="arrow-down">
+							<a href=""><i class="fa fa-chevron-down"></i></a>
+						</div>
 					</div>
 				</div>
 				<div class="offer">
@@ -114,12 +120,15 @@
 							<h3>Hong Kong & Macau</h3>
 							<span class="state">Bonus Extras!</span>
 						</div>
+						<div class="arrow-down">
+							<a href=""><i class="fa fa-chevron-down"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
 			
 		</section>
-		<section class="holidays">
+		<section class="holidays" style="background:url(img/bg-2.jpg); background-repeat:no-repeat; background-size: cover;">
 			<h2>Holidays Type</h2>
 			<p>get explore your dream to travel the world!</p>
 			<div class="items">
@@ -178,29 +187,85 @@
 		</section>
 		<footer class="footer">
 			<div class="footer_main">
-				<div class="column">
-					<h2>Newsletter</h2>
-					<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
-					<form action="" class="subscribe">
-						<input type="text" placeholder="Subscribes...">
-						<input type="submit" value="go">
-					</form>
-
-				</div>
-				<div class="column">
-					<h2>Latest News</h2>
-					<div class="event">
-						<img src="" alt="">
-						<h3>Postformat Gallery: Multiple images</h3>
-						<p class"date">October 21, 2013 - 3:31 pm</p>
+				<div class="container">
+					<div class="column">
+						<h2>Newsletter</h2>
+						<p>Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore.</p>
+						<form action="" class="subscribe">
+							<input type="text" placeholder="Subscribes...">
+							<input type="submit" value="go">
+						</form>
 					</div>
-					<div class="event">
-						<img src="" alt="">
-						<h3>Postformat Gallery: Multiple images</h3>
-						<p class"date">October 21, 2013 - 3:31 pm</p>
+					<div class="column">
+						<h2>Latest News</h2>
+						<a href="" class="holder-link">
+						<div class="event">
+							
+							<div class="img-holder">
+								<img src="img/img_small-1.jpg" alt="">
+							</div>
+							<div class="post-info">
+								<h3>Postformat Gallery: Multiple images</h3>
+								<p class="date">October 21, 2013 - 3:31 pm</p>
+							</div>
+						</div>
+						</a>
+						<div class="event">
+							<div class="img-holder">
+								<img src="img/img_small-2.jpg" alt="">
+							</div>
+							<div class="post-info">
+								<h3>Postformat Gallery: Multiple images</h3>
+								<p class="date">October 21, 2013 - 3:31 pm</p>
+							</div>
+						</div>
+					</div>
+					<div class="column">
+						<h2>Tags</h2>
+							<a href="" class="tag">Agent Login</a>
+							<a href="" class="tag">Customer Login</a>
+							<a href="" class="tag">Not a Member?</a>
+							<a href="" class="tag">Contact</a>
+							<a href="" class="tag">New Horizons</a>
+							<a href="" class="tag">Lanscape</a>
+							<a href="" class="tag">Tags</a>
+							<a href="" class="tag">Nice</a>
+							<a href="" class="tag">Some</a>
+							<a href="" class="tag">Portrait</a>
+						</div>
+					<div class="column">
+						<h2>Address</h2>
+						<address>DieSachbearbeiter Schönhauser Allee</address>
+						<address>167c,10435 Berlin Germany</address>
+						<div class="email-holder">
+							<span>Email:</span>
+							<a href="mailto:moin@blindtextgenerator.de">moin@blindtextgenerator.de</a>
+						</div>
+						<ul class="footer-socials">
+							<li><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li><a href=""><i class="fa fa-twitter"></i></a></li>
+							<li><a href=""><i class="fa fa-tumblr"></i></a></li>
+							<li><a href=""><i class="fa fa-pinterest"></i></a></li>
+						</ul>
 					</div>
 				</div>
-			</div>
+				</div>
+				<div class="footer-bottom">
+					<ul>
+						<li><a href="">Home</a></li>
+						<li><a href="">Destinations</a></li>
+						<li><a href="">Criuses</a></li>
+						<li><a href="">Specils</a></li>
+						<li><a href="">Holidays</a></li>
+						<li><a href="">Blog</a></li>
+						<li><a href="">Contact Us</a></li>
+					</ul>
+					<p>Copyright @voyage. All Right Reserved.</p>
+					<div class="back-to-top">
+						<a href=""><i class="fa fa-arrow-up"></i></a>
+					</div>
+				</div>
+			
 		</footer>
 
 	</div>

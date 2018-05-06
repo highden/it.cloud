@@ -3,6 +3,8 @@
 @import "partials/mixin";
 @import "partials/icomoon";
 @import 'vendors/include-media';
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
 
 
 
@@ -21,6 +23,19 @@ body {
 
 a {
 	color: $primary-color;
+}
+
+h2 {
+	color: $blue;
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 25px;
+	margin: 0 0 20px 0;
+}
+
+p {
+	font-size: 16px;
+	margin: 0 0 60px 0;
 }
 
 .wrapper {
@@ -61,17 +76,31 @@ a {
 			list-style: none;
 			display: flex;
 			justify-content: flex-start;
+				
 				li {
 					box-shadow: 1px 0 0 0 #000, 2px 0 0 0 #374d63;
 					margin: -9px 7px;
 					padding: 7px 14px 0 0;
 				}
+					i {
+						margin: 0 5px 0 0;
+					}
+
 					a {
 						color: $white;
 						text-decoration: none;
 					}
+
+					a:hover {
+						color: $green;
+					}
+
 			.register {
 				color: $green;
+			}
+
+			.register:hover {
+				opacity: 0.8;
 			}
 		}
 
@@ -79,6 +108,7 @@ a {
 			list-style: none;
 			display: flex;
 			justify-content: flex-end;
+			
 			li {
 				box-shadow: 1px 0 0 0 #000, 2px 0 0 0 #374d63;
 				margin: -9px 0;
@@ -90,6 +120,10 @@ a {
 					a {
 						color: $white;
 					}
+
+					a:hover {
+						color: $green;
+					}	
 		}
 }
 
@@ -102,49 +136,61 @@ a {
 		justify-content: space-between;
 		padding: 30px 0;
 		align-items: center;
-	}
+	
 
-	.nav {
-		margin: 0 0 0 auto;
+		.nav {
+			margin: 0 0 0 auto;
 
-		ul {
-			list-style: none;
-			display: flex;
-			justify-content: flex-start;
+			ul {
+				list-style: none;
+				display: flex;
+				justify-content: flex-start;
 
-			li {
-				margin-right: 20px;
-				}
+				li {
+					margin-right: 30px;
+									
 					a {
 						color: $blue;
 						text-decoration: none;
 						text-transform: uppercase;
 						font-size: 15px;
+						font-weight: 500;
 					}
 
-					a:hover, {
-						color: $green;
-					}
+					:hover {
+							color: $green;
+						}
 
+					&.active {
+
+						a {
+							color: $green;
+						}
+					}	
+				}
+			}
+		}
+
+		.search {
+			margin: 0 0 0 20px;
+			font-size: 20px;
+			
+				a {
+					
+					i {
+					border: 2px solid $black;
+					border-radius: 50%;
+					padding: 8px;
+					}
+				}
+
+				:hover {
+					color: $green;
+					
+
+				}
 		}
 	}
-
-	.search {
-		position: relative;
-		margin: 0 0 0 100px;
-		font-size: 20px;
-		border: 2px solid $black;
-		border-radius: 50%;
-		padding: 18px;
-			a {
-				position: absolute;
-				left: 11px;
-				top: 7px;
-				right: 0;
-				bottom: 0;
-			}
-	}
-
 }
 
 .visual {
@@ -210,7 +256,7 @@ a {
 			padding: 20px 35px 20px 0;
 
 			h2 {
-				
+				color: $light-blue;
 				font-size: 20px;
 				font-weight: 300;
 			}
@@ -227,21 +273,315 @@ a {
 
 	label {
 		font-size: 22px;
+		font-weight: 300;
 		padding: 0 24px 0 0;
 	}
 
-	input {
+	input[type="text"], [type="date"] {
 		margin: 0 0 0 24px;
 		padding: 8px;
 		font-size: 20px;
 		color: $grey;
+		min-width: 300px;
 	}
 
-	input[type=submit] {
+	input[type="submit"] {
 		margin: 0;
+		background: $green;
+		font-size: 20px;
+		color: $white;
+		border: 1px solid transparent;
+		padding: 13px;
+		outline: none;
+		cursor: pointer;
+
+		&:hover {
+		opacity: 0.6;
 	}	
-}
-
-
+	}
 
 	
+}
+
+.offers {
+	padding: 85px 0 130px 0;
+	text-align: center;
+
+}
+
+.slick-center {
+
+}
+
+.offer {
+	padding: 5px;
+	background: #eee;
+	border-radius: 5px;
+	width: 20%;
+
+
+	.title {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.title-text {
+			text-align: left;
+
+			h3 {
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+.holidays {
+	text-align: center;
+	padding: 85px 0 130px 0;
+
+	h2 {
+		color: $white;
+	}
+
+
+	p {
+		color: $light-blue;
+	}
+
+	.items {
+		display: flex;
+	}
+
+	.item {
+
+		a {
+			font-size: 20px;
+			text-decoration: none;
+			color: $light-blue;
+		}
+
+		:hover {
+			color: $green;
+		}
+	}
+}
+
+.clients {
+	text-align: center;
+	padding: 85px 0 130px 0;
+	
+	.testimonial {
+		border: 1px solid $grey;
+
+		blockquote {
+			color: #4d4d4d;
+			font-size: 16px;
+		}
+
+		cite {
+			color: $green;
+			font-size: 18px;
+		}
+
+		span {
+			display: block;
+			font-size: 13px;
+			color: #b2b2b2;
+		}
+	}
+}
+
+.footer {
+	background: $blue;
+	color: $white;
+
+	h2 {
+		font-size: 25px;
+		font-weight: 700;
+		color: $green;
+		margin: 0 0 18px 0;
+		text-transform: none;
+	}
+}
+
+.footer_main {
+
+	.container {
+	display: flex;
+	flex-wrap: nowrap;
+	padding: 65px 0;
+	}
+	
+
+	.column {
+		width: 20%;
+		margin: 0 40px 0 0;
+
+		P {
+			font-size: 13px;
+			margin: 0 0 18px 0;
+			line-height: 23px;
+		}
+
+		.subscribe {
+			display: flex;
+			align-items: center;
+		}
+
+		input[type="text"] {
+			outline: none;
+			padding: 9px;
+			border: 1px solid $black;
+			border-radius: 2px;
+			width: 60%;
+			margin: 0 8px 0 0;
+			
+		}
+
+		input[type="submit"] {
+			background: $green;
+			color: $white;
+			text-transform: uppercase;
+			font-size: 15px;
+			padding: 7px;
+			outline: #004437;
+			border: 1px solid transparent;
+			border-radius: 2px;
+			cursor: pointer;
+
+			&:hover {
+				opacity: 0.6;
+			}
+			
+		}
+
+		.event {
+			display: flex;
+			align-items: flex-start;
+		}
+
+		.img-holder {
+			border: 1px solid $white;
+			padding: 2px 2px 0 2px;
+			margin: 0 12px 0 0;
+		}
+
+		.post-info {
+			display: flex;
+			flex-direction: column;
+
+			h3 {
+				font-size: 13px;
+			}
+
+			.date {
+				font-size: 12px;
+				font-weight: 300;
+				color: $green;
+			}
+		}
+
+		.tag {
+			display: inline-block;
+			text-decoration: none;
+			padding: 5px;
+			border: 1px solid $white;
+			color: $white;
+			margin: 0 0px 4px 0;
+			border-radius: 2px;
+			font-size: 13px;
+		}
+
+		address {
+			margin: 0 0 15px 0;
+			font-size: 13px;
+		}
+
+		.email-holder {
+			margin: 0 0 20px 0;
+		}
+
+		span {
+			font-size: 13px;
+			color: $green;
+			margin: 0 5px 0 0;
+		}
+
+		a {
+			color: $white;
+			font-size: 13px;
+			text-decoration: none;
+		}
+
+		.footer-socials {
+			display: flex;
+			
+			li {
+				margin: 0 30px 0 0;
+
+				a {
+					font-size: 25px;
+				}
+			}
+		} 
+	}
+
+}
+
+.footer-bottom {
+	border-top: 1px solid #394c5f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 35px 0 0 0;
+
+	ul {
+		display: flex;
+		margin: 0 0 15px 0;
+		
+		li {
+			margin: 0 15px 0 0;
+		}
+			a {
+				text-decoration: none;
+				color: $white;
+				font-size: 15px;
+			}
+
+			a:after {
+				margin: 0 0 0 15px;
+				content: "::";
+			}
+
+			a:hover {
+				color: $green;
+			}
+
+			
+
+	}
+
+	p {
+		color: $light-blue;
+		font-size: 13px;
+	}
+
+	.back-to-top {
+		position: relative;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-width: 0 40px 40px 40px;
+		border-color: transparent transparent $green transparent;
+
+		a {
+			position: absolute;
+			color: $white;
+			top: 17px;
+			right: 0;
+			left: -7px;
+			font-size: 16px;
+		}
+	}
+
+}
