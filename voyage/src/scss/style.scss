@@ -130,8 +130,8 @@ p {
 .header_main {
 	background: $white;
 	box-shadow: 0px 4px 3px 0px rgba(36,59,70,1);
+	
 	.container {
-
 		display: flex;
 		justify-content: space-between;
 		padding: 30px 0;
@@ -586,6 +586,12 @@ p {
 			a:hover {
 				color: $green;
 			}
+
+			li.active {
+				a {
+					color: $green;
+						}
+					}
 
 			
 
