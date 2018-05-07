@@ -172,21 +172,27 @@ p {
 		}
 
 		.search {
+			min-height: 23px;
+			min-width: 23px;
 			margin: 0 0 0 20px;
 			font-size: 20px;
-			
-				a {
-					
-					i {
-					border: 2px solid $black;
-					border-radius: 50%;
-					padding: 8px;
-					}
-				}
+			display: block;
+			border: 2px solid $black;
+			border-radius: 50%;
+			padding: 8px;
+			position: relative;
 
-				:hover {
+				i {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+
+				}	
+
+				&:hover {
 					color: $green;
-					
+					border: 2px solid $green;
 
 				}
 		}
@@ -455,6 +461,14 @@ p {
 			
 		}
 
+		.holder-link {
+			&:hover {
+				.event {
+					opacity: 0.6;
+				}
+			}
+		}
+
 		.event {
 			display: flex;
 			align-items: flex-start;
@@ -490,7 +504,15 @@ p {
 			margin: 0 0px 4px 0;
 			border-radius: 2px;
 			font-size: 13px;
+
+			&:hover {
+			background: $green;
+			border: 1px solid $green;
+			color: $white;
+			}
 		}
+
+
 
 		address {
 			margin: 0 0 15px 0;
@@ -511,6 +533,10 @@ p {
 			color: $white;
 			font-size: 13px;
 			text-decoration: none;
+
+			&:hover {
+				color: $green;
+			}
 		}
 
 		.footer-socials {
@@ -521,6 +547,10 @@ p {
 
 				a {
 					font-size: 25px;
+
+					&:hover {
+						color: $green;
+					}
 				}
 			}
 		} 
