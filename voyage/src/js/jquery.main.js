@@ -1,5 +1,10 @@
-$(document).ready(function(){
-$('.slick-center').slick({
+jQuery(function(){
+  initSlickCarousel();
+});
+
+// $(document).ready(function(){
+function initSlickCarousel() {
+jQuery('.slick-center').slick({
   centerMode: true,
   centerPadding: '60px',
   slidesToShow: 3,
@@ -24,4 +29,5 @@ $('.slick-center').slick({
     }
   ]
 });
-});
+}
+// });
