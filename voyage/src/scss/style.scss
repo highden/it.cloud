@@ -3,8 +3,8 @@
 @import "partials/mixin";
 @import "partials/icomoon";
 @import 'vendors/include-media';
-@import 'vendors/slick';
-@import 'vendors/slick-theme';
+// @import 'vendors/slick';
+// @import 'vendors/slick-theme';
 
 
 
@@ -315,18 +315,29 @@ p {
 
 }
 
-.slick-center {
 
-}
-
-.offer {
-	padding: 5px;
+.offer_slide {
 	background: #eee;
 	border-radius: 5px;
-	width: 20%;
+	padding: 5px;
+	width: auto;
+	
+	.slider-img {
 
+		
+	}
 
-	.title {
+	a {
+		display: inline-block;
+		width: 100%;
+
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+	
+	.slider_title {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -339,6 +350,7 @@ p {
 			}
 		}
 	}
+	
 }
 
 .holidays {
